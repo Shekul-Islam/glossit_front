@@ -1,0 +1,830 @@
+.top-section {
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url("public/images/banner.png");
+
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 90%;
+  padding-top: 30px;
+  padding-bottom: 75px;
+  display: flex;
+  color: white;
+  position: relative;
+  text-align: center;
+  align-items: center;
+  background-size: cover;
+  justify-content: center;
+  background-position: center;
+}
+
+.top-title {
+  width: 95%;
+  font-size: 32px;
+  font-weight: 700;
+  color: #ffffff;
+  line-height: 1.3em;
+  border-style: solid;
+  border-color: #ffffff;
+  padding: 15px 0px 0px 0px;
+  background-color: #030303;
+  border-width: 4px 4px 4px 4px;
+  border-radius: 20px 20px 20px 20px;
+}
+
+.pdt {
+  padding-top: 20px;
+}
+
+.sub-title {
+  font-size: 25px;
+  font-weight: 700;
+  color: #ffffff;
+  padding-top: 35px;
+  line-height: 1.3em;
+  font-family: "Hind Siliguri";
+}
+
+.logo-top {
+  margin-top: 30px;
+  border-radius: 50%;
+  width: 20%;
+}
+
+.order-btn{
+  font-family: "Hind Siliguri", Sans-serif;
+  color: #fff;
+  font-size: 30px;
+  font-weight: 700;
+  border-style: solid;
+  text-decoration: none;
+  border-color: white;
+  background-color: #ff7400;
+  padding: 20px 44px 20px 44px;
+  border-width: 4px 4px 4px 4px;
+  border-radius: 30px 30px 30px 30px;
+
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.order-btn:hover {
+  background-color: #028309;
+  padding: 18px 30px;
+  font-size: 1.4em;
+}
+
+.order-btn-c{
+  font-family: "Hind Siliguri", Sans-serif;
+  color: #fff;
+  font-size: 30px;
+  font-weight: 700;
+  border-style: solid;
+  text-decoration: none;
+  border-color: #000000;
+  background-color: #ff7400;
+  padding: 20px 30px 20px 30px;
+  border-width: 4px 4px 4px 4px;
+  border-radius: 30px 30px 30px 30px;
+
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.order-btn-c:hover {
+  background-color: #028309;
+  padding: 18px 30px;
+  font-size: 1.4em;
+} 
+
+
+
+.top-title-b {
+  width: 40%;
+  font-size: 32px;
+  font-weight: 700;
+  color: #ffffff;
+  line-height: 1.3em;
+  border-style: solid;
+  padding: 15px 0px 0px 0px;
+  background-color: #030303;
+  border-radius: 20px 20px 20px 20px;
+}
+
+.seb-title {
+  margin: 0px 0px 0px 0px;
+  padding: 10px 0px 1px 0px;
+  background-color: #4c677cad;
+  border-style: solid;
+  border-color: #000000;
+  border-radius: 10px 10px 10px 10px;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
+  padding-bottom: 10px;
+  text-align: center;
+}
+
+.border-a {
+  border-style: solid;
+  border-width: 2px 2px 2px 2px;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
+  transition: background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;
+  padding: 30px 10px 0px 10px;
+  margin-top: 25px;
+  margin-bottom: 65px;
+}
+
+.tx-c {
+  text-align: center;
+  font-family: "Hind Siliguri", Sans-serif;
+  font-size: 26px;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+.tx-d {
+  text-align: center;
+  font-family: "Hind Siliguri", Sans-serif;
+  font-size: 26px;
+  font-weight: 700;
+  color: black;
+}
+
+.tx-e {
+  color: #000000;
+  font-family: "Hind Siliguri", Sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 35px;
+  text-align: left;
+  padding-top: 15px;
+}
+
+.check-mark {
+  color: green;
+  font-size: 24px;
+  font-weight: 900;
+}
+
+
+.pd-b {
+  padding-top: 50px;
+  padding-bottom: 60px;
+}
+
+
+.pd-v {
+  padding-top: 50px;
+  padding-bottom: 17px;
+  height: 75vh;
+  width: 100%;
+}
+
+.pd {
+  padding-top: 37px;
+}
+
+.pd-c {
+  margin-top: 11px;
+}
+
+.btn-frame {
+  margin-top: 35px;
+}
+
+
+
+.clb-g {
+  background-color: #2c8a982b;
+  padding-top: 28px;
+  width: 100%;
+  padding-bottom: 40px;
+}
+
+.slider-head{
+  text-align: center;
+  padding-bottom: 15px;
+}
+
+.clb {
+  background-color: #2c8a982b;
+  padding-top: 10px;
+}
+
+.clb-size {
+  background-color: #2c8a982b;
+  padding-top: 50px;
+  padding-bottom: 1px;
+}
+
+.pd-bt {
+  padding-bottom: 55px;
+}
+
+.bgc {
+  background-color: #2c8a982b;
+}
+
+.title-d {
+  color: #000000;
+  text-align: center;
+  border-style: solid;
+  box-sizing: border-box;
+  border-color: #000000;
+  background-color: #4c677cad;
+  font-family: "Hind Siliguri", Sans-serif;
+  font-size: 30px;
+  font-weight: 700;
+  padding: 15px 0px 10px 0px;
+  border-width: 4px 4px 4px 4px;
+  border-radius: 20px 20px 20px 20px;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
+}
+
+.title-e {
+  width: 55%;
+  color: #000000;
+  text-align: center;
+  border-style: solid;
+  box-sizing: border-box;
+  border-color: #000000;
+  background-color: #4c677cad;
+  font-family: "Hind Siliguri", Sans-serif;
+  font-size: 26px;
+  font-weight: 700;
+  padding: 15px 0px 10px 0px;
+  border-width: 3px 3px 3px 3px;
+  border-radius: 20px 20px 20px 20px;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
+}
+.slider-head {
+  width: 33%;
+  color: #000000;
+  text-align: center;
+  border-style: solid;
+  box-sizing: border-box;
+  border-color: #000000;
+  background-color: #4c677cad;
+  font-family: "Hind Siliguri", Sans-serif;
+  font-size: 26px;
+  font-weight: 700;
+  padding: 2px 0px 3px 0px;
+  border-width: 3px 3px 3px 3px;
+  border-radius: 20px 20px 20px 20px;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
+}
+.title-h {
+  border-style: solid;
+  border-color: #000000;
+  background-color: #4c677cad;
+  margin: 0px 0px 0px 0px;
+  padding: 10px 0px 1px 0px;
+  border-radius: 10px 10px 10px 10px;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
+}
+
+.se-img {
+  transition: background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;
+  display: flex;
+  border-style: solid;
+  padding: 30px 0px 30px 0px;
+  border-width: 2px 2px 2px 2px;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
+}
+
+.tx-p {
+  color: #000000;
+  font-family: "Hind Siliguri", Sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 35px;
+  padding-left: 16px;
+}
+
+/* .img-lf {
+  flex-wrap: wrap;
+  position: relative;
+  align-content: flex-start;
+  width: 100%;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
+}
+
+.img-lf-size {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 800px;
+  padding-top: 30px;
+  padding-bottom: 40px;
+} */
+
+.sp {
+  color: #fff;
+  font-size: 32px;
+  font-weight: 700;
+}
+
+
+
+.card-bx {
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  padding: 15px;
+}
+
+.card-bx div {
+  height: 260px;
+}
+
+.ard-bx {
+  width: 25%;
+}
+
+.dis-d {
+  font-family: "Hind Siliguri", Sans-serif;
+  color: #000000;
+  box-sizing: border-box;
+  margin: 0;
+  width: 100%;
+  padding: 5px;
+  font-size: 19px;
+  font-weight: 500;
+  line-height: 1.3em;
+}
+
+.crd {
+  text-align: center;
+  padding: 20px 5px 20px 5px;
+  border-radius: 5px 5px 5px 5px;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
+}
+
+.ct-a {
+  flex-wrap: wrap;
+  align-content: flex-start;
+  background-color: #cec7dfad;
+  width: 100%;
+  margin: 0px 0px 0px 0px;
+  padding: 50px 0px 50px 0px;
+  border-radius: 10px 10px 10px 10px;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
+}
+
+.ct-b {
+  flex-wrap: wrap;
+  align-content: flex-start;
+  background-color: #cec7dfad;
+  width: 100%;
+  margin: 0px 0px 0px 0px;
+  padding: 50px 0px 50px 0px;
+  border-radius: 10px 10px 10px 10px;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
+}
+
+.ct-n {
+  display: flex;
+  align-content: flex-start;
+  background-color: #cec7dfad;
+  width: 100%;
+  margin: 0px 0px 0px 0px;
+  padding: 50px 0px 50px 0px;
+  border-radius: 10px 10px 10px 10px;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
+}
+
+.prc {
+  text-align: center;
+  border-style: solid;
+  border-color: #000000;
+  background-color: #000000;
+  width: 100%;
+  padding: 12px 0px 8px 0px;
+  border-width: 2px 2px 2px 2px;
+  border-radius: 10px 10px 10px 10px;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
+}
+
+.card-image {
+  width: 22%;
+  margin-bottom: 10px;
+}
+
+.sec-4 {
+  padding: 42px 5px 20px 5px;
+}
+
+.sec-or {
+  padding: 40px;
+  display: flex;
+  justify-content: center;
+}
+
+.slider-title {
+  padding: 12px;
+  display: flex;
+  justify-content: center;
+}
+
+
+
+.order-form {
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+  border-style: solid;
+  align-content: flex-start;
+  transition: background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;
+  width: 100%;
+  padding: 30px 30px 30px 30px;
+  border-width: 2px 2px 2px 2px;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
+}
+
+.order-title {
+  border-style: solid;
+  border-color: #000000;
+  background-color: #007f0a;
+  padding: 15px 0px 10px 0px;
+  border-width: 4px 4px 4px 4px;
+  border-radius: 20px 20px 20px 20px;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
+}
+
+.dg-title {
+  color: #ffffff;
+  font-family: "Hind Siliguri", Sans-serif;
+  margin: 0;
+  line-height: 1;
+  font-size: 32px;
+  font-weight: 700;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.title-oc {
+  overflow: hidden;
+  font-weight: bolder;
+  text-transform: uppercase;
+  font-size: 1.1em;
+  padding-top: 10px;
+}
+
+.card-a {
+  cursor: pointer;
+  position: relative;
+  background-color: #f7f7f7;
+  border: 1px solid #b0b0b0;
+  font-size: 1em;
+  font-weight: 600;
+  padding: 20px 30px;
+  margin: 0 10px 22px;
+  border-radius: 0.35em;
+  width: calc(50% - 20px);
+}
+
+.input-a {
+  clear: none;
+  color: #555;
+  cursor: pointer;
+  text-align: center;
+  background: #fff;
+  display: inline-block;
+  vertical-align: middle;
+  border: 1px solid #b4b9be;
+  transition: 0.05s border-color ease-in-out;
+  box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
+  outline: 0;
+  width: 16px;
+  height: 16px;
+  line-height: 0;
+  min-width: 16px;
+  border-radius: 50%;
+  margin: -4px 4px 0 0;
+  padding: 0 !important;
+}
+
+.img-v {
+  width: 80px;
+  margin-right: 15px;
+}
+
+.c-bd {
+  margin: 0px 0px 0px 0px;
+  padding: 50px 0px 50px 0px;
+  background-color: #cec7dfad;
+  border-radius: 10px 10px 10px 10px;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
+}
+
+.p-title {
+  color: #ffffff;
+  font-family: "Hind Siliguri", Sans-serif;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 1.3em;
+}
+
+.rs {
+  color: #ffffff;
+  border-style: solid;
+  border-color: #000000;
+  background-color: #000000;
+  width: 600px;
+  padding: 15px;
+  font-size: 32px;
+  font-weight: 700;
+  border-width: 2px 2px 2px 2px;
+  border-radius: 10px 10px 10px 10px;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
+}
+
+.rt {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.tx-r {
+    color: #ff0000;
+    font-weight: 600;
+  }
+  
+  .tx-bl {
+    color: #000000;
+    font-weight: 700;
+  }
+
+
+
+
+
+
+
+
+
+/* bill-section */
+
+
+.body-field[data-v-5b601ecd] {
+  background-color: #ffeffa6b;
+  padding-bottom: 50px;
+}
+
+.body-field {
+    background-color: #ffffff6b;
+    padding-bottom: 50px;
+  }
+  
+
+
+
+.border-sec {
+  width: 100%;
+  border-style: solid;
+  border-radius: 30px;
+  padding: 33px 30px 12px 30px;
+  border-width: 2px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+  margin-top: 10px;
+}
+
+
+.title-sec {
+  text-align: center;
+  border-style: solid;
+  border-color: #000;
+  background-color: green;
+  padding: 15px 0px;
+  margin: 10px 0px;
+  border-width: 4px;
+  border-radius: 20px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
+
+
+.title-sec p {
+  color: whitesmoke;
+  font-family: "Hind Siliguri", Sans-serif;
+  font-size: 21px ;
+  font-weight:bold;
+
+}
+
+.order-card{
+
+  border: 1px solid rgb(138, 138, 138);
+  border-radius: 8px;
+}
+
+.demo-card {
+  padding: 11px 22px;
+  background-color: #fff;
+  border-radius: 15px;
+  display: flex;
+  gap: 15px;
+  
+}
+
+
+
+.dash {
+  border: none;
+  border-top: 2px dashed #322f32;
+  height: 0;
+}
+
+/* Product Quantity */
+.wrapper {
+  height: 30px;
+  display: flex;
+}
+.quantity {
+  text-align: center;
+  width: 33px;
+  height: 34px;
+  font-size: 14px;
+  color: #201d1d;
+  font-weight: bold;
+  border: 1px solid #e1e8ee;
+ 
+}
+
+.btn-pls {
+  border: 1px solid #9b9b9b;
+  width: 30px;
+  background-color: #fdfdfd;
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+  /* cursor: pointer; */
+}
+
+.btn-mns {
+  border: 1px solid #9b9b9b;
+  width: 30px;
+  background-color: #fdfdfd;
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px;
+}
+
+button:focus,
+input:focus {
+  outline: 5px;
+}
+
+/* Hide the number input spin buttons */
+.input-box::-webkit-inner-spin-button,
+.input-box::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.input-box[type="number"] {
+  -moz-appearance: textfield;
+}
+
+::-webkit-input-placeholder {
+  font-size: 12px;
+}
+.form-text {
+  font-size: 11px;
+}
+
+
+
+
+:root {
+  accent-color: rgb(255, 94, 0);
+}
+
+[type="radio"] {
+  font-size: inherit;
+  width: 0.95em;
+  height: 0.95em;
+}
+
+
+.select-item {
+  display: flex;
+  gap: 5px;
+}
+
+
+.triangle-top-left-2 {
+  position: relative;
+  left: 5%;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 0 15px 15px 0;
+
+  border-color: transparent transparent rgba(213, 213, 213, 0.71) transparent;
+}
+
+.pop {
+  display: flex;
+  background-color: rgba(213, 213, 213, 0.71);
+  height: 55px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+}
+
+.btn-warning {
+  box-shadow: 0 2px 4px rgba(199, 126, 0, 0.751);
+  height: 50px;
+}
+
+/* Coupon-start */
+
+#buttonWithText {
+  overflow: hidden;
+  width: 250px;
+}
+
+#slider {
+  display: flex;
+  width: 200%;
+  transition: 0.5s;
+}
+
+#slider.expanded {
+  transform: translateX(-50%);
+}
+
+#toggle {
+  flex: 0 0 50%;
+}
+
+#input {
+  flex: auto;
+}
+
+#ok {
+  flex: none;
+}
+
+/* Coupon-end */
+
+.txt-input {
+  background-color: orange;
+  box-shadow: #ff7700ce;
+  border-radius: 25px;
+  border: 1px solid orange;
+  color: rgb(0, 0, 0);
+}
+
+.aft-input {
+  
+    height: 40px;
+    border-radius: 25px;
+    font-size: 20px;
+    border: 1px solid;
+    color: #262525;
+}
+
+.btn-sbt {
+  background-color: #f16334;
+}
+
+.copn-submt{
+    background-color: orange;
+    border: 1px solid gray;
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+}
+
+
+.order-submit{
+  background-color: orange;
+  border-radius: 5px;
+  padding: 15px 15px;
+  border: none;
+  box-shadow: 0px 0px 1px orange;
+}
+
+.footer-sec{
+  background-color: #000;
+  padding: 20px 0;
+}
+
+.footer-middle {
+  text-align: center;
+  color: whitesmoke;
+}
+
+.footer-middle span{
+  padding: 10px;
+  font-size: 25px;
+}
+
+.copyright-text{
+  font-size: 13px;
+  text-align: center;
+  margin-top: 10px;
+  color: whitesmoke;
+}
+
+
