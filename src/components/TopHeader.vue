@@ -57,7 +57,7 @@ const clearSearchBar = () => {
 const getSettingsData = async () => {
   const settingData = await setting.getData();
       
-  settingData.data.map((ele) => {
+  settingData?.data.map((ele) => {
     if (ele.key == "header_logo") {
       logo.value = ele.logo;
     }
@@ -77,7 +77,7 @@ const getSettingsData = async () => {
 };
 const getLogo = async () => {
   const settingData = await setting.getData('key', 'header_logo');
-  logo.value = settingData.data[0];  
+  logo.value = settingData?.data[10];  
 };
 
 
@@ -152,20 +152,20 @@ const logout = async () => {
 
 // sticky Header
 
-const stickyHeader = () => {
-  const mainHeaderNavSection = document.querySelector(".header-media-group");
+// const stickyHeader = () => {
+//   const mainHeaderNavSection = document.querySelector(".header-media-group");
 
-  window.addEventListener("scroll", () => {
-    const scrollTopWindow = window.pageYOffset;
-    const scrollScreenSize = window.screen.width;
+//   window.addEventListener("scroll", () => {
+//     const scrollTopWindow = window.pageYOffset;
+//     const scrollScreenSize = window.screen.width;
 
-    if (scrollTopWindow > 80 && scrollScreenSize < 768) {
-      mainHeaderNavSection.classList.add("header-sticky-phone");
-    } else {
-      mainHeaderNavSection.classList.remove("header-sticky-phone");
-    }
-  });
-};
+//     if (scrollTopWindow > 80 && scrollScreenSize < 768) {
+//       mainHeaderNavSection.classList.add("header-sticky-phone");
+//     } else {
+//       mainHeaderNavSection.classList.remove("header-sticky-phone");
+//     }
+//   });
+// };
 
 // sticky Header
 
@@ -191,7 +191,6 @@ onMounted(() => {
   changeFavicon();
   // addGTM();
   document.addEventListener('click', onClickOutside)
-  stickyHeader();
   getLogo();
 });
 </script>
@@ -228,7 +227,7 @@ onMounted(() => {
             <!-- mobile user & wishlist code will be set here -->
           </div>
           <router-link :to="{ name: 'homePage' }" class="header-logo">
-            <img :src="logo?.value" alt="logo" />
+            <img :src="logo?.value" alt="logo"  />
           </router-link>
          
          
@@ -315,6 +314,7 @@ onMounted(() => {
 </template>
 
 <style>
+
 
 
 .header-form {

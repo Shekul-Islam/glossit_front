@@ -25,7 +25,7 @@ localStorage.setItem('user_token', uniqueID);
   <div>
 
     <span v-if="isMatchingPath()">
-      <!-- <ChatIcon /> -->
+      <ChatIcon />
   
       <!-- <AddtoCartIcon /> -->
 

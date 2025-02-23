@@ -323,6 +323,8 @@ const stickyFooter = () => {
     let search = "";
     let paginateSize = 8;
     const res = await shop.getData(type, brand, catId, subCategory, attributeIds, price, search, paginateSize);
+    console.log(res);
+    
     relatedProducts.value = res.data;
   };
 

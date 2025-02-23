@@ -131,12 +131,18 @@ onMounted(() => {
 
 
 <template>
-  <div>
+  <div class="product-card-wrapper">
     <div class="product-card" :class="product?.current_stock == 0 ? 'product-disable' : ''">
       <div class="product-media">
         <div class="product-label">
-            <label class="label-text off"  v-if="product?.offer_percent != 0.00">-{{ product?.offer_percent }}%</label>
+            <div class="d-grid">
+              <label class="label-text off"  v-if="product?.offer_percent != 0.00">-{{ product?.offer_percent }}%</label>
             <label class="label-text" :class="product?.type === 'feature-product'? 'feat': product?.type === 'top-product'? 'sale': product?.type === 'recent-product'? 'new': ''">{{ product?.type }}</label>
+            </div>
+            <div class="product-widget">
+              <a title="Product View" href="#" class="fas fa-search" data-bs-toggle="modal" data-bs-target="#product-view" @click.prevent="getProductDetails(product?.id)"></a>
+              <a title="Product Video" v-show="product?.video_url" :href="product?.video_url" class="venobox fas fa-play" data-vbtype="video" data-autoplay="true"></a>
+            </div>
         </div>
           
         
@@ -159,10 +165,7 @@ onMounted(() => {
            </span>
       </div>
      
-          <div class="product-widget">
-            <a title="Product View" href="#" class="fas fa-search" data-bs-toggle="modal" data-bs-target="#product-view" @click.prevent="getProductDetails(product?.id)"></a>
-            <a title="Product Video" v-show="product?.video_url" :href="product?.video_url" class="venobox fas fa-play" data-vbtype="video" data-autoplay="true"></a>
-          </div>
+        
 
       <div class="product-content">
           <h6 class="product-name">
@@ -181,9 +184,15 @@ onMounted(() => {
 
 
           <button class="product-add" title="Add to Cart" @click.prevent="addToCart(product)">
-              <i :class="loading == product.id ? 'fa-solid fa-spinner fa-spin' : 'fas fa-shopping-basket'"></i>
-              <span>order Now</span>
+              <i :class="loading == product.id ? 'fa-solid fa-spinner fa-spin' : 'fas fa-shopping-cart'"></i>
+              <span>Add to Cart</span>
           </button>
+
+          <div v-if="product?.short_description">
+            <div class="short-description"><hr>{{ product.short_description }}</div>
+          </div>
+
+      
 
            <!-- <div class="row" v-if="product?.variations?.data?.length > 0">
             <div class="col-xl-6 col-lg-12 col-12 mt-2">
@@ -212,6 +221,7 @@ onMounted(() => {
                 <span>{{ orderButton }}</span>
               </router-link>
             </div>
+
           </div> -->
       </div>
   </div>

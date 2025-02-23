@@ -221,7 +221,7 @@ onMounted(() => {
       <div class="row">
           <div class="col-12">
               <div class="footer-bottom">
-                  <p class="text-center footer-copytext">&copy;  2024 Nittonoton Made By <a class="text-danger" href="http://servicekey.io" target="_blank" rel="noopener noreferrer">Nittonoton Team</a> </p>
+                  <p class="text-center footer-copytext">&copy;  2025 Glossit Made By <a class="text-danger" href="http://servicekey.io" target="_blank" rel="noopener noreferrer">Glossit Team</a> </p>
               </div>
           </div>
       </div>

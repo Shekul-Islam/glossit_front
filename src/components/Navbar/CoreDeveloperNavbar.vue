@@ -11,9 +11,13 @@ const commonIsToggleFunctionality = useCommonIsToggleFunctionality();
 const cart                          = useCart();
 const { cartItemCount, totalPrice } = storeToRefs(cart);
 const logo                          = ref("");
+const fbPageUrl                     = ref("");
+const primaryColor                     = ref("");
+const secondaryColor                     = ref("");
 
 
 // All Variable  Code Is Here.....................................................................................................
+const setting = useSetting();
 const auth = useAuth();
 const router = useRouter();
 const route = useRoute();
@@ -27,10 +31,11 @@ const campaignDataShowing = ref("");
 // All Function  Code Is Here.....................................................................................................
 
 
+
 const getSettingsData = async () => {
   const settingData = await setting.getData();
       
-  settingData.data.map((ele) => {
+  settingData?.data.map((ele) => {
     if (ele.key == "header_logo") {
       logo.value = ele.logo;
     }
@@ -50,8 +55,9 @@ const getSettingsData = async () => {
 };
 const getLogo = async () => {
   const settingData = await setting.getData('key', 'header_logo');
-  logo.value = settingData.data[0];  
+  logo.value = settingData?.data[10];  
 };
+
 
 
 
@@ -68,15 +74,25 @@ const logout = async () => {
 
 const stickyHeader = () => {
   const mainHeaderNavSection = document.querySelector(".navbar-part");
+  const headerCart = document.querySelector(".navbar-cart");
+  const headerLogo = document.querySelector(".navbar-logo");
+
+  // প্রথমে hidden করে দাও যাতে লোড হওয়ার সময় দেখায় না
+  headerCart.classList.add("hidden");
+  headerLogo.classList.add("hidden");
 
   window.addEventListener("scroll", () => {
     const scrollTopWindow = window.pageYOffset;
-    const scrollScreenSize = window.screen.width;
+    const scrollScreenSize = window.innerWidth; 
 
     if (scrollTopWindow > 80 && scrollScreenSize > 768) {
       mainHeaderNavSection.classList.add("header-sticky");
+      headerCart.classList.remove("hidden");
+      headerLogo.classList.remove("hidden");
     } else {
       mainHeaderNavSection.classList.remove("header-sticky");
+      headerCart.classList.add("hidden");
+      headerLogo.classList.add("hidden");
     }
   });
 };
@@ -84,6 +100,7 @@ const stickyHeader = () => {
 // sticky Header
 
 onMounted(() => {
+  getSettingsData();
   stickyHeader();
   getLogo();
 });
@@ -94,15 +111,17 @@ onMounted(() => {
     <!--=====================================
                     NAVBAR PART START
         =======================================-->
+        
+       
         <nav class="navbar-part">
             <div class="container-fluid">
                 <div class="navbar-content">
-                    <div class="">
-                       <router-link :to="{ name: 'homePage' }" class="header-logo">
-                      <img :src="logo?.value" alt="logo" />
+                    <div class="navbar-logo">
+                       <router-link :to="{ name: 'homePage' }" >
+                      <img :src="logo?.value" alt="logo" class="logo-size"/>
                     </router-link>
                     </div>
-
+                   
                     <div class=" navbar-items">
                         <div >
                             <ul class="navbar-list">
@@ -143,7 +162,7 @@ onMounted(() => {
                         </div>
                     </div>
 
-                    <div >
+                    <div class="navbar-cart" >
                       <div class="navbar-widget-group"  @click="commonIsToggleFunctionality.isCartSideBartOpenOrClose">
                         <button class="navbar-widget navbar-cart " title="Cartlist">
                           <i class="fas fa-shopping-cart"></i>
@@ -162,6 +181,14 @@ onMounted(() => {
 </template>
 
 <style>
+
+.logo-size{
+max-width: 60px;
+}
+
+.hidden {
+  display: none !important;
+}
 
 .navbar-items{
   display: flex;
