@@ -214,12 +214,12 @@ onMounted(() => {
 
 @media (max-width: 991px) {
   .header-media-group a img {
-    width: 140px;
+    width: 45px;
   }
 }
 @media (max-width: 767px) {
   .header-media-group a img {
-    width: 120px;
+    width: 44px;
   }
   .cate-btn,
   .header-cart-btn{

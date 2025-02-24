@@ -219,13 +219,12 @@ onMounted(() => {
                 Nav SIDEBAR PART END
         =======================================-->
 
-    <div
+    <!-- <div
       class="marqueTag header-top"
       v-if="headerTextOne || headerTextTwo || headerTextThree || topHeaderText"
     >
       <div class="container d-flex justify-content-between">
         <marquee behavior="" direction="">
-          <!-- <span>{{ topHeaderText?.value }}</span> -->
           <span>{{ headerTextOne }}</span>
           <span>{{ headerTextTwo }}</span>
           <span>{{ headerTextThree }}</span>
@@ -248,7 +247,7 @@ onMounted(() => {
               <img :src="logo?.value" alt="logo" />
             </router-link>
 
-            <!-- <div class="mobile-header-menu dropdown-right">
+            <div class="mobile-header-menu dropdown-right">
               <button class="header-src">
                 <i class="fas fa-user me-2"></i>
               </button>
@@ -281,7 +280,7 @@ onMounted(() => {
                   >
                 </li>
               </ul>
-            </div> -->
+            </div>
           
           </div>
           <router-link :to="{ name: 'homePage' }" class="header-logo">
@@ -361,7 +360,7 @@ onMounted(() => {
             </ul>
           </form>
 
-          <!-- <div class="header-widget-group dropdown">
+          <div class="header-widget-group dropdown">
             <button class="header-widget" title="User">
               <i class="fas fa-user"></i>
               <span></span>
@@ -390,13 +389,15 @@ onMounted(() => {
                 >
               </li>
             </ul>
-          </div> -->
-          <!-- <div class="header-widget-group">
+          </div>
+          <div class="header-widget-group">
             <button class="header-widget" title="Wishlist">
               <i class="fas fa-heart"></i>
               <span></span>
             </button>
-          </div> -->
+          </div>
+
+
           <div class="header-widget-group me-2">
             <a href="tel:+8801886096958" class="header-widget" title="Cartlist">
                 <i class="fas fa-phone-alt"></i>
@@ -412,7 +413,7 @@ onMounted(() => {
           </div>
         </div>
       </div>
-    </header>
+    </header> -->
   </div>
 </template>
 

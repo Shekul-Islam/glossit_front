@@ -8,6 +8,7 @@ import {  NavSideBar } from "@/components";
 import { vOnClickOutside } from '@vueuse/components'
 const commonIsToggleFunctionality = useCommonIsToggleFunctionality();
 
+
 // All Variable  Code Is Here.....................................................................................................
 const auth                          = useAuth();
 const { user, loading }             = storeToRefs(auth);
@@ -316,6 +317,16 @@ onMounted(() => {
 <style>
 
 
+@media (max-width: 768px) {
+  .header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    width: 100%;
+    background: white;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px;
+  }
+}
 
 .header-form {
   width: 35%; /* বা 30% ও দিতে পারো */

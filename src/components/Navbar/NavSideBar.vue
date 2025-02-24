@@ -12,6 +12,7 @@ const logo = ref();
 const phone = ref();
 const title = ref();
 
+
 const getSettingsData = async () => {
 
   if (!settings.value.data || !Array.isArray(settings.value.data)) {
@@ -74,8 +75,8 @@ onMounted(() => {
     ></div>
     <aside :class="['nav-sidebar', { active: navSideBar }]">
       <div class="nav-header">
-        <router-link :to="{ name: 'homePage' }">
-          <img :src="logo?.value" alt="logo" />
+        <router-link :to="{ name: 'homePage' }"  @click="commonIsToggleFunctionality.isNavSideBarOpenOrClose">
+          <img :src="logo?.value" alt="logo"  />
         </router-link>
         <button
           class="nav-close"
@@ -85,7 +86,7 @@ onMounted(() => {
         </button>
       </div>
       <div class="nav-content">
-        <ul class="nav-list">
+        <ul class="nav-list"  @click="commonIsToggleFunctionality.isNavSideBarOpenOrClose">
           <li>
             <router-link :to="{ name: 'CampaignBanner' }" class="nav-link dropdown-link" ><i class="icofont-page"></i>Campaign</router-link>
           </li>
